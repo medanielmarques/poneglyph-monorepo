@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": false,
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2
+}
