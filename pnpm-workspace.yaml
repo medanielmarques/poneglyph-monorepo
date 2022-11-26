@@ -1,4 +1,3 @@
 packages:
-  - apps/web
-  - packages/ts-config
-  - packages/whatever
+  - 'apps/*'
+  - 'packages/*'

@@ -3,6 +3,8 @@
     "source.fixAll": true
   },
 
+  "files.eol": "\n",
+
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "prettier.semi": false,
