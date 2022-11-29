@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "presentation": {
+    "echo": false,
+    "reveal": "always",
+    "focus": false,
+    "panel": "dedicated",
+    "showReuseMessage": true
+  },
+  "tasks": [
+    {
+      "label": "Launch Poneglyph.app Development terminals",
+      "dependsOn": ["Turbo dev", "pscale(3309)", "Prisma Studio(5555)"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Turbo dev",
+      "type": "shell",
+      "command": "pnpm run dev",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "pscale(3309)",
+      "type": "shell",
+      "command": "pscale connect poneglyph dev --port 3309",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Prisma Studio(5555)",
+      "type": "shell",
+      "command": "cd apps/web && pnpm prisma studio",
+      "isBackground": false,
+      "problemMatcher": []
+    }
+  ]
+}

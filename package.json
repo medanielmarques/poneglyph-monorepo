@@ -3,7 +3,7 @@
   "license": "MIT",
   "packageManager": "pnpm@7.16.1",
   "scripts": {
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "build": "turbo run build"
   },
   "devDependencies": {
