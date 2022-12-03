@@ -1,4 +1,5 @@
 {
+  "name": "poneglyph.app",
   "private": true,
   "license": "MIT",
   "packageManager": "pnpm@7.16.1",

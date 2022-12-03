@@ -1,0 +1,13 @@
+{
+  "name": "@poneglyph/db",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {},
+  "dependencies": {
+    "@poneglyph/tsconfig": "*",
+    "@prisma/client": "^4.5.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.5.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "@poneglyph/tsconfig/base.json",
+  "include": [
+    "src",
+    "index.ts",
+    "transformer.ts"
+    // "node_modules/@poneglyph/auth/next-auth.d.ts"
+  ]
+}

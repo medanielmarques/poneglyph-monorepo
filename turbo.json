@@ -5,8 +5,8 @@
       "cache": false
     },
     "build": {
-      "outputs": [".next/**"],
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "outputs": [".next/**"]
     }
   }
 }

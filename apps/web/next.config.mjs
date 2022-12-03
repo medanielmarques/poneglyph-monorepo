@@ -16,7 +16,7 @@ const config = {
   experimental: {
     appDir: true,
     // Enables hot-reload and easy integration for local packages
-    // transpilePackages: ['@poneglyph/api'],
+    transpilePackages: ['@poneglyph/api', '@poneglyph/auth', '@poneglyph/db'],
   },
 }
 export default config

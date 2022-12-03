@@ -1,13 +1,5 @@
 {
   "name": "@poneglyph/tsconfig",
-  "version": "0.0.0",
-  "private": true,
-  "files": [
-    "base.json",
-    "nextjs.json",
-    "react.json"
-  ],
-  "devDependencies": {
-    "tsconfig-paths": "^4.1.0"
-  }
+  "version": "1.0.0",
+  "private": true
 }
