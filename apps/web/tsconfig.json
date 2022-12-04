@@ -1,12 +1,15 @@
 {
   "extends": "@poneglyph/tsconfig/nextjs.json",
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
+    "node_modules/@poneglyph/auth/next-auth.d.ts",
     ".next/types/**/*.ts"
   ]
 }

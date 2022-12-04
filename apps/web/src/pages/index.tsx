@@ -1,12 +1,13 @@
 import { type NextPage } from 'next'
+import { signIn, signOut, useSession } from 'next-auth/react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { signIn, signOut, useSession } from 'next-auth/react'
 
 import { trpc } from '../utils/trpc'
 
 const Home: NextPage = () => {
-  const hello = trpc.example.hello.useQuery({ text: 'from tRPC' })
+  const hello = trpc.auth.getSession.useQuery()
+  const idk = trpc.auth.getSecretMessage.useQuery()
 
   return (
     <>
@@ -45,7 +46,15 @@ const Home: NextPage = () => {
           </div>
           <div className='flex flex-col items-center gap-2'>
             <p className='text-2xl text-white'>
-              {hello.data ? hello.data.greeting : 'Loading tRPC query...'}
+              {hello.data
+                ? JSON.stringify(hello.data)
+                : 'Loading tRPC query...'}
+            </p>
+
+            <p className='text-2xl text-white'>
+              {idk.data
+                ? JSON.stringify(idk.data)
+                : 'Loading tRPC query secret message...'}
             </p>
             <AuthShowcase />
           </div>

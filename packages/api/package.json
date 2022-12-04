@@ -2,9 +2,12 @@
   "name": "@poneglyph/api",
   "version": "1.0.0",
   "main": "index.ts",
-  "scripts": {},
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
   "dependencies": {
     "@poneglyph/db": "*",
+    "@poneglyph/auth": "*",
     "@poneglyph/tsconfig": "*",
     "@trpc/client": "v10.4.3",
     "@trpc/server": "v10.4.3",

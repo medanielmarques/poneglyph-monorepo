@@ -33,7 +33,7 @@
     {
       "label": "Prisma Studio(5555)",
       "type": "shell",
-      "command": "cd apps/web && pnpm prisma studio",
+      "command": "cd packages/db && pnpm run prisma-studio",
       "isBackground": false,
       "problemMatcher": []
     }

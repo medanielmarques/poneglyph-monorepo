@@ -2,12 +2,18 @@
   "name": "@poneglyph/db",
   "version": "1.0.0",
   "main": "index.ts",
-  "scripts": {},
+  "scripts": {
+    "with-env": "dotenv -e ../../apps/web/.env --",
+    "prisma-studio": "pnpm run with-env prisma studio",
+    "generate-schemas": "pnpm run with-env prisma generate",
+    "postinstall": "pnpm run generate-schemas"
+  },
   "dependencies": {
     "@poneglyph/tsconfig": "*",
     "@prisma/client": "^4.5.0"
   },
   "devDependencies": {
+    "dotenv-cli": "^6.0.0",
     "prisma": "^4.5.0"
   }
 }

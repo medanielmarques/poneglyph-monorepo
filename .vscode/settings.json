@@ -11,5 +11,14 @@
   "prettier.jsxSingleQuote": true,
   "prettier.semi": false,
   "prettier.printWidth": 80,
-  "prettier.tabWidth": 2
+  "prettier.tabWidth": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true
+  }
 }

@@ -7,6 +7,9 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**"]
+    },
+    "type-check": {
+      "cache": false
     }
   }
 }
